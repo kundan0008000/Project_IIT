@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineStream - Movie Discovery Platform</title>
+    <link rel="stylesheet" href="Kshitij_IIT.css">
+</head>
+
+<body>
+    <!-- Theme Toggle -->
+    <div class="theme-toggle">
+        <input type="checkbox" id="theme-toggle" />
+        <label for="theme-toggle"></label>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span>🎬 CineStream</span>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#trending" class="nav-link">Trending</a></li>
+                <li><a href="#shows" class="nav-link">Shows</a></li>
+                <li><a href="#reviews" class="nav-link">Reviews</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <!-- Mobile Hamburger -->
+            <input type="checkbox" id="hamburger" class="hamburger-checkbox" />
+            <label for="hamburger" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+          
+
+            <div class="mobile-menu">
+                <a href="#home">Home</a>
+                <a href="#trending">Trending</a>
+                <a href="#shows">Shows</a>
+                <a href="#reviews">Reviews</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>CineStream</h1>
+                <p class="hero-subtitle">Your Ultimate Movie & TV Show Discovery Platform</p>
+                <p class="hero-description">
+                    Discover the latest trending movies, binge-worthy shows, and hidden gems
+                    all in one place. Your next favorite watch is just a click away!
+                </p>
+                <a href="#trending" class="cta-button">
+                    Explore Trending Movies
+                </a>
+            </div>
+
+            <div class="hero-image">
+                <svg viewBox="0 0 400 300" class="movie-svg">
+                    <rect x="50" y="50" width="300" height="200" fill="#1a1a1a" stroke="#ff6b6b" stroke-width="3"
+                        rx="15" class="screen" />
+                    <circle cx="200" cy="150" r="40" fill="#ff6b6b" class="play-button">
+                        <animate attributeName="r" values="35;45;35" dur="2s" repeatCount="indefinite" />
+                    </circle>
+                    <polygon points="185,135 185,165 215,150" fill="white" class="play-icon" />
+
+                    <rect x="70" y="30" width="20" height="15" fill="#4ecdc4" class="light">
+                        <animate attributeName="opacity" values="0.5;1;0.5" dur="1.5s" repeatCount="indefinite" />
+                    </rect>
+                    <rect x="310" y="35" width="15" height="10" fill="#4ecdc4" class="light">
+                        <animate attributeName="opacity" values="1;0.5;1" dur="1.8s" repeatCount="indefinite" />
+                    </rect>
+
+                    <circle cx="100" cy="280" r="3" fill="#ffe66d" class="dot">
+                        <animate attributeName="cy" values="280;270;280" dur="1.2s" repeatCount="indefinite" />
+                    </circle>
+                    <circle cx="300" cy="275" r="4" fill="#ffe66d" class="dot">
+                        <animate attributeName="cy" values="275;265;275" dur="1.4s" repeatCount="indefinite" />
+                    </circle>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trending Movies Section -->
+    <section id="trending" class="trending-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Trending Movies</h2>
+                <p>Discover the hottest movies everyone's talking about</p>
+            </div>
+
+            <div class="movies-grid">
+                <div class="movie-card">
+                    <div class="movie-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/8/82/Raid_2_poster.jpg"
+                            alt="Raid 2" />
+                        <div class="movie-duration">2h 19m</div>
+                        <div class="movie-overlay">
+                            <a href="https://netflix.com" class="watch-btn" target="_blank">Watch Now</a>
+                            <button class="watchlist-btn">
+                                <span class="add-icon">+</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="movie-info">
+                        <h3>Raid 2</h3>
+                        <p>jay Devgn reprises his role as IRS officer Amay Patnaik in this sequel to the 2018 crime thriller. Directed by Rajkumar Gupta, it pits him against a powerful antagonist (Riteish Deshmukh) in a high-stakes tax evasion case. With over ₹204 crore grossed, it’s a box office hit, praised for its gripping narrative. Released May 1, 2025.</p>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <div class="movie-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/4/4a/Sikandar_2025_film_poster.jpg"
+                            alt="Sikandar" />
+                        <div class="movie-duration">2h 38m</div>
+                        <div class="movie-overlay">
+                            <a href="https://netflix.com" class="watch-btn" target="_blank">Watch Now</a>
+                             <button class="watchlist-btn">
+                                <span class="add-icon">+</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="movie-info">
+                        <h3>Sikandar</h3>
+                        <p>Directed by A.R. Murugadoss, this action thriller stars Salman Khan as a larger-than-life hero, with Rashmika Mandanna and Suniel Shetty in supporting roles. It’s among the most anticipated releases, grossing ₹176.18 - ₹177 crore worldwide, with high buzz for its Eid release.</p>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <div class="movie-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/e/ec/Sky_Force_poster.jpg"
+                            alt="Sky Force" />
+                        <div class="movie-duration">2h 26m</div>
+                        <div class="movie-overlay">
+                            <a href="https://netflix.com" class="watch-btn" target="_blank">Watch Now</a>
+                             <button class="watchlist-btn">
+                                <span class="add-icon">+</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="movie-info">
+                        <h3>Sky Force</h3>
+                        <p>Directed by Sandeep Kelwani, this patriotic action-drama stars Akshay Kumar and Veer Pahariya, inspired by India’s 1965 airstrike on Pakistan’s Sargodha airbase. It grossed ₹144 – ₹168.88 crore. Released January 24, 2025.</p>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <div class="movie-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/3/35/L2_-_Empuraan_poster.jpg"
+                            alt="Empuraan" />
+                        <div class="movie-duration">2h 28m</div>
+                        <div class="movie-overlay">
+                            <a href="https://netflix.com" class="watch-btn" target="_blank">Watch Now</a>
+                             <button class="watchlist-btn">
+                                <span class="add-icon">+</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="movie-info">
+                        <h3>Empuraan</h3>
+                        <p>MPURAAN marketed as L2E is a 2025 Indian Malayalam-language action thriller film directed by Prithviraj Sukumaran and written by Murali Gopy. It is jointly produced by Antony Perumbavoor, Subaskaran Allirajah and Gokulam Gopalan through Aashirvad Cinemas, Lyca Productions and Sree Gokulam Movies</p>
+                    </div>
+                </div>
+
+
+                <div class="movie-card">
+                    <div class="movie-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/8/83/Good_Bad_Ugly_poster.jpg"
+                            alt="Good Bad Ugly" />
+                        <div class="movie-duration">2h 19m</div>
+                        <div class="movie-overlay">
+                            <a href="https://netflix.com" class="watch-btn" target="_blank">Watch Now</a>
+                             <button class="watchlist-btn">
+                                <span class="add-icon">+</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="movie-info">
+                        <h3>Good Bad Ugly</h3>
+                        <p>Good Bad Ugly (also known by the initialism GBU) is a 2025 Indian Tamil-language action comedy film directed by Adhik Ravichandran and produced by Mythri Movie Makers, marking their first production in Tamil cinema</p>
+                    </div>
+                </div>
+
+
+                <div class="movie-card">
+                    <div class="movie-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/7/75/Chhaava_film_poster.jpg"
+                            alt="Chhaava" />
+                        <div class="movie-duration">2h 48m</div>
+                        <div class="movie-overlay">
+                            <a href="https://netflix.com" 
+                            class="watch-btn" target="_blank">Watch Now</a>
+                             <button class="watchlist-btn">
+                                <span class="add-icon">+</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="movie-info">
+                        <h3>Chhaava</h3>
+                        <p>Chhaava (transl. Lion cub) is a 2025 Indian Hindi-language historical action film based on the life of Sambhaji Maharaj, the second ruler of the Maratha Empire, who is played by Vicky Kaushal. An adaptation of the Marathi novel Chhava by Shivaji Sawant, it is directed by Laxman Utekar and produced by Dinesh Vijan under Maddock Films.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Shows Section -->
+    <section id="shows" class="shows-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Popular Shows</h2>
+                <p>Binge-worthy series that will keep you on the edge of your seat</p>
+            </div>
+
+            <div class="shows-grid">
+                <div class="show-card">
+                    <div class="show-image">
+                        <img src="https://1.bp.blogspot.com/-WkSAYVQOb_A/XucY3EkEaNI/AAAAAAAAPoY/FWj9ZN0pOJ4_0Ibi7s1EACqQGx7t5YwjACK4BGAsYHg/s1777/Panchayat.jpg"
+                            alt="Panchayat" />
+                    </div>
+                    <div class="show-info">
+                        <h3>Panchayat</h3>
+                        <div class="show-meta">
+                            <span>Drama</span>
+                            <span>3 Seasons</span>
+                            <span>24 Episodes</span>
+                        </div>
+                        <p>Panchayat is an Indian Hindi-language comedy drama television series created by The Viral Fever for Amazon Prime Video. Written by Chandan Kumar and directed by Deepak Kumar Mishra, the show features Jitendra Kumar, Raghubir Yadav, Neena Gupta, Sanvikaa, Chandan Roy, Durgesh Kumar, Ashok Pathak, Faisal Malik, Sunita Rajwar and Pankaj Jha.a panchayat village of Phulera in Uttar Pradesh.</p>
+                        <div class="show-actions">
+                            <input type="checkbox" id="modal1" class="modal-toggle" />
+                            <label for="modal1" class="learn-more-btn">Learn More</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="show-card">
+                    <div class="show-image">
+                        <img src="https://i0.wp.com/www.smartprix.com/bytes/wp-content/uploads/2022/11/05ad1d12091d3d56332ed6dcbf5d2f3c3a7c084fd47d610f55d2725adbead01b._RI_V_TTW_.jpg?ssl=1&quality=80&w=f"
+                            alt="Mirzapur" />
+                    </div>
+                    <div class="show-info">
+                        <h3>Mirzapur</h3>
+                        <div class="show-meta">
+                            <span>Crime</span>
+                            <span>3 Seasons</span>
+                            <span>29 Episodes</span>
+                        </div>
+                        <p>Mirzapur is an Indian action crime thriller streaming television series created for Amazon Prime Video, by Karan Anshuman, who wrote the script along with Puneet Krishna & Vineet Krishna. Anshuman directed the first season of the series, along with Aditya mohanty and Mihir Desai, the latter of whom directed the second season. The series is produced by Ritesh Sidhwani and Farhan Akhtar of Excel Entertainment.</p>
+                        <div class="show-actions">
+                            <input type="checkbox" id="modal2" class="modal-toggle" />
+                            <label for="modal2" class="learn-more-btn">Learn More</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="show-card">
+                    <div class="show-image">
+                        <img src="https://www.koimoi.com/wp-content/new-galleries/2022/11/khakee-the-bihar-chapter-review-001.jpg"
+                            alt="Khakee: The Bihar Chapter" />
+                    </div>
+                    <div class="show-info">
+                        <h3>Khakee: The Bihar Chapter</h3>
+                        <div class="show-meta">
+                            <span>Action</span>
+                            <span>1 Seasons</span>
+                            <span>7 Episodes</span>
+                        </div>
+                        <p>Khakee: The Bihar Chapter is an Indian action thriller television series created by Neeraj Pandey and written by Umashankar Singh.It was produced by Shital Bhatia, under Friday Storytellers. It stars Karan Tacker, Avinash Tiwary, Abhimanyu Singh, Brijeshwar Singh Jatin Sarna, Ravi Kishan, Ashutosh Rana, Nikita Dutta, Aishwarya Sushmita, Anup Soni, Shraddha Das, Neeraj Kashyap and Bharat Jha.</p>
+                        <div class="show-actions">
+                            <input type="checkbox" id="modal3" class="modal-toggle"/>
+                            <label for="modal3" class="learn-more-btn">Learn More</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- User Reviews Section -->
+    <section id="reviews" class="reviews-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>User Reviews</h2>
+                <p>See what our community is saying about their favorite movies and shows</p>
+            </div>
+
+            <div class="reviews-container">
+                <div class="reviews-display">
+                    <h3>Latest Reviews</h3>
+                    <div class="reviews-grid">
+                        <div class="review-card">
+                            <div class="review-header">
+                                <img src="https://raw.githubusercontent.com/faker-js/assets-person-portrait/refs/heads/main/female/512/68.jpg"
+                                    alt="Sarah Johnson" class="reviewer-image" />
+                                <div class="reviewer-info">
+                                    <h4>Sarah Johnson</h4>
+                                    <div class="stars">★★★★★</div>
+                                </div>
+                            </div>
+                            <p class="review-text">"Quantum Heist blew my mind! The plot twists kept me guessing until
+                                the very end. The visual effects are absolutely stunning and the acting is top-notch.
+                                Definitely a must-watch for sci-fi fans!"</p>
+                        </div>
+
+                        <div class="review-card">
+                            <div class="review-header">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face"
+                                    alt="Mike Chen" class="reviewer-image" />
+                                <div class="reviewer-info">
+                                    <h4>Mike Chen</h4>
+                                    <div class="stars">★★★★☆</div>
+                                </div>
+                            </div>
+                            <p class="review-text">"Future Cops is an incredible series! The world-building is
+                                phenomenal and the character development is outstanding. Can't wait for the next season.
+                                Highly recommended for anyone who loves cyberpunk."</p>
+                        </div>
+
+                        <div class="review-card">
+                            <div class="review-header">
+                                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face"
+                                    alt="Emily Rodriguez" class="reviewer-image" />
+                                <div class="reviewer-info">
+                                    <h4>Emily Rodriguez</h4>
+                                    <div class="stars">★★★★★</div>
+                                </div>
+                            </div>
+                            <p class="review-text">"The Royal Court has everything - drama, romance, political intrigue.
+                                The costumes and sets are absolutely gorgeous. It's like stepping back in time.
+                                Brilliant storytelling!"</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-form-container">
+                    <h3>Share Your Review</h3>
+                    <form class="review-form">
+                        <div class="form-group">
+                            <label for="reviewer-name">Your Name</label>
+                            <input type="text" id="reviewer-name" name="reviewer-name" required />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="reviewer-email">Email Address</label>
+                            <input type="email" id="reviewer-email" name="reviewer-email" required />
+                        </div>
+
+                        <div class="form-group">
+                            <label>Rating</label>
+                            <div class="rating-input">
+                                <input type="radio" id="star5" name="rating" value="5" />
+                                <label for="star5">★</label>
+                                <input type="radio" id="star4" name="rating" value="4" />
+                                <label for="star4">★</label>
+                                <input type="radio" id="star3" name="rating" value="3" />
+                                <label for="star3">★</label>
+                                <input type="radio" id="star2" name="rating" value="2" />
+                                <label for="star2">★</label>
+                                <input type="radio" id="star1" name="rating" value="1" />
+                                <label for="star1">★</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="review-text">Your Review</label>
+                            <textarea id="review-text" name="review-text" rows="5"
+                                placeholder="Share your thoughts about the movie or show..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn">Submit Review</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>CineStream</h3>
+                    <p>Your ultimate destination for discovering amazing movies and TV shows. Join our community of
+                        entertainment lovers and never miss out on the latest releases.</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com" class="social-icon" target="_blank">📘</a>
+                        <a href="https://twitter.com" class="social-icon" target="_blank">🐦</a>
+                        <a href="https://instagram.com" class="social-icon" target="_blank">📷</a>
+                        <a href="https://youtube.com" class="social-icon" target="_blank">📺</a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#trending">Trending Movies</a></li>
+                        <li><a href="#shows">Popular Shows</a></li>
+                        <li><a href="#reviews">Reviews</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="https://example.com/help" target="_blank">Help Center</a></li>
+                        <li><a href="https://example.com/contact" target="_blank">Contact Us</a></li>
+                        <li><a href="https://example.com/faq" target="_blank">FAQ</a></li>
+                        <li><a href="https://example.com/support" target="_blank">Technical Support</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="https://example.com/terms" target="_blank">Terms & Conditions</a></li>
+                        <li><a href="https://example.com/privacy" target="_blank">Privacy Policy</a></li>
+                        <li><a href="https://example.com/cookies" target="_blank">Cookie Policy</a></li>
+                        <li><a href="https://example.com/dmca" target="_blank">DMCA</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 CineStream. All rights reserved. Created By HARSH RAJ.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#home" class="back-to-top">↑</a>
+</body>
+
+</html>
